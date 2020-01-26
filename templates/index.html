@@ -1,0 +1,14 @@
+<html>
+<body>
+
+<h1>flower type prediction</h1>
+<form action="{{url_for('predict')}}"method="post">
+    <input type="text" placeholder="petal_lenght" name="s1">
+    <input type="text" placeholder="sepal_lenght" name="s2">
+    <input type="text" placeholder="cortal_length" name="s3">
+    <input type="submit"></button>
+</form>
+<br>
+{{ prediction_text }}
+</body>
+</html>
